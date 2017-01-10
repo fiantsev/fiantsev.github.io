@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>TilliWilli</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="theBullet.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+        <!--For Volume Toogle only-->
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+        <link rel="stylesheet" href="general.css">
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
+        <script src="bg_mover.js"></script>
+        <script src="principlesSequenceGenerator.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+           <div class="container-fluid">
+            <div id="header" class="jumbotron jumColor" style="border-radius:5px;">
+                <!--<h1 class="jumbotron text-center" style="border-radius:2px;">TilliWilli Production Ltd</h1>-->
+                <h1 class="jumbotron text-center" style="border-radius:2px;">TilliWilli</h1>
+                    <!--<h3 class="text-center"><small>The place where dreams come true<small></h3>-->
+                
+            </div>
+            
+        </div>
+                <div class="container" id="eMenu">
+                <div onclick="GotoFacebook()">Facebook</div>
+                <div onclick="GotoVK()">VK</div>
+                <div onclick="GotoInstagram()">Instagram</div>
+                <div onclick="GotoEMail()">TilliWilli@gmail.com</div>
+                <!--<div>...</div>-->
+            </div>
+         <audio id="theMusic" loop>
+            <source src="Battle Toads - Double Dragon OST Stage-II.mp3" type="audio/mpeg">
+        </audio>
+       <script>StartAutoPlayMusic();</script>
+       <span id="musicOff" class="glyphicon glyphicon-volume-off" style="position:fixed;visibility:hidden;" onclick="ToogleMusic()"></span>
+       <span id="musicOn" class="glyphicon glyphicon-volume-up" style="position:fixed" onclick="ToogleMusic()"></span>
+    </body>
+
+</html>
