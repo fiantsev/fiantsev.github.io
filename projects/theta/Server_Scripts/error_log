@@ -1,0 +1,1 @@
+[22-May-2015 07:36:12 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/tillliwilli/public_html/entity/Server_Scripts/load_from_db.php on line 19

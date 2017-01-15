@@ -1,0 +1,31 @@
+.CAtom
+{
+border:1px solid #3C9CC6;
+border-radius:5px;
+/background-color:#C0E0EF;
+background-color:rgba(192, 224, 239, 1);
+display:inline-block;
+padding:0;
+margin:5px;
+}
+.CAtomLabel
+{
+color:#434D57;
+font-size:1.5vw;
+padding:0;
+margin:0;
+float:left;
+}
+.CAtomButtonDelete
+{
+vertical-align:middle;
+border:1px solid #2666AD;
+box-shadow:0px 0px 2px #2666AD;
+background-color:LightCoral;
+width:1.25vw;
+height:1.25vw;
+border-radius:1vw;
+padding:0;
+margin:5px;
+font-weight:bold;
+}

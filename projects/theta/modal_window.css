@@ -1,0 +1,14 @@
+.ArgsUnderPlate
+{
+background-color:rgba(0, 0, 0, 0.9);
+z-index:255;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+}
+.ArgsView
+{
+background-color:white;
+}

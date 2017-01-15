@@ -1,0 +1,22 @@
+.HintWindow
+{
+position:fixed;
+border:1px solid black;
+border-radius:5px;
+background-color:white;
+box-shadow:0px 0px 3px 1px white;
+z-index:1;
+min-width:50px;
+font-size:1em;
+text-align:center;
+}
+.HintWindow hr
+{
+padding:0;
+margin:0;
+}
+.HintHeader
+{
+background-color:GreenYellow;
+border-radius:5px 5px 0px 0px;
+}

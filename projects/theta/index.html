@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta manifest="manifest.appcache">
+		<meta charset="utf-8">
+		<title>ThetaSpace</title>
+		<link rel="icon" type="image/png" href="beetle.png">
+		<link rel="stylesheet" type="text/css" href="entity.css">
+		<link rel="stylesheet" type="text/css" href="modal_window.css">
+		<link rel="stylesheet" type="text/css" href="hint_window.css">
+		<link rel="stylesheet" type="text/css" href="medium.css">
+		<link rel="stylesheet" type="text/css" href="entity_main_menu.css">
+		<link rel="stylesheet" type="text/css" href="atom.css">
+		<link rel="stylesheet" type="text/css" href="atom_field.css">
+		<link rel="stylesheet" type="text/css" href="headstone.css">
+		<link rel="stylesheet" type="text/css" href="edit_form.css">
+		<link rel="stylesheet" type="text/css" href="main_menu.css">
+		<script src="application.js"></script>
+		<script src="input_controller.js"></script>
+		<script src="page_builder.js"></script>
+		<script src="modal_window.js"></script>
+		<script src="hint_window.js"></script>
+		<script src="medium.js"></script>
+		<script src="relation.js"></script>
+		<script src="entity.js"></script>
+		<script src="base.js"></script>
+		<script src="atom.js"></script>
+		<script src="atom_field.js"></script>
+		<script src="headstone.js"></script>
+		<script src="edit_form.js"></script>
+		<script src="parser_edl.js"></script>
+		<script src="parser_nl.js"></script>
+		<script src="main_menu.js"></script>
+	</head>
+	<body>
+		<script>
+			CApplication.GetApplication();
+			CApplication.GetScreen();
+			document.body.onkeydown = CInputController.KeyboardHandler;
+			document.body.onwheel = CInputController.MouseWheelHandler;
+			document.body.onmousedown = CInputController.MouseHandler;
+			document.body.onresize = function(){theScreen.avatar.Resize(window.innerWidth, window.innerHeight)};
+			var theScreen = new CMedium.Create(document.body, 0, 0);
+			theScreen.avatar.Visualize();
+			//theScreen.avatar.image.style.backgroundColor = '#8193A6';
+			theScreen.avatar.image.style.backgroundColor = 'rgb(37, 37, 38)';
+			theScreen.avatar.image.setAttributeNS(null, "viewBox", "0 0 "+window.innerWidth+" "+window.innerHeight);
+			/*
+			var mm = CUI.CreateMainMenu();
+			document.body.appendChild(mm);
+			*/
+			var mm = MainMenu("main_menu_background.jpg");
+			document.body.appendChild(mm);
+			document.body.appendChild(BackToMM("MM"));
+		</script>
+	</body>
+</html>

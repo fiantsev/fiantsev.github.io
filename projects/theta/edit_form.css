@@ -1,0 +1,44 @@
+.CEditForm
+{
+width:40%;
+left:30%;
+top:30%;
+position:fixed;
+}
+.CEditFormName
+{
+width:99.4%;
+}
+.CEditFormSpecs
+{
+width:99.4%;
+}
+.CEditFormControlPanel
+{
+width:100%;
+padding-left:30%;
+}
+.CEditFormButtonYes
+{
+width:20%;
+border:1px solid #3C9CC6;
+background-color:rgb(64, 74, 74);
+font-size:1.25vw;
+color:rgb(92, 112, 112);
+}
+.CEditFormButtonYes:hover
+{
+color:GreenYellow;
+}
+.CEditFormButtonNo
+{
+width:20%;
+border:1px solid #3C9CC6;
+background-color:rgb(64, 74, 74);
+font-size:1.25vw;
+color:rgb(92, 112, 112);
+}
+.CEditFormButtonNo:hover
+{
+color:LightCoral;
+}
