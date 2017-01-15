@@ -49,3 +49,7 @@ function GotoEMail()
 {
     window.location.href = "mailto:tilliwilli@gmail.com";
 }
+function Github()
+{
+    window.location.href = "https://github.com/fiantsev";
+}
